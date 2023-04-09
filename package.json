@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node --transpile-only src/index.ts",
     "dev": "env-cmd -f .env ts-node-dev --inspect --respawn --transpile-only src/index.ts",
-    "lint": "eslint . --ext .ts --fix",
+    "lint": "eslint --max-warnings=0",
     "prepare": "is-ci || husky install",
     "prettier": "prettier '**/*.{json,yml,yaml,ts,tsx}' --write"
   },
@@ -28,7 +28,7 @@
     "ts-node-dev": "^2.0.0"
   },
   "lint-staged": {
-    "**/*.(json,yml,yaml,ts,tsx}": "prettier --write",
+    "**/*": "prettier --write --ignore-unknown",
     "*.{ts,tsx}": [
       "npm run lint"
     ]
