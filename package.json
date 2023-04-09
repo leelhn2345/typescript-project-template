@@ -8,7 +8,7 @@
     "dev": "env-cmd -f .env ts-node-dev --inspect --respawn --transpile-only src/index.ts",
     "lint": "eslint --fix --max-warnings=0",
     "prepare": "is-ci || husky install",
-    "prettier": "prettier --write ."
+    "prettier": "prettier '**/*.{json,yml,yaml,ts,tsx}' --write"
   },
   "author": "",
   "license": "ISC",
@@ -28,7 +28,7 @@
     "ts-node-dev": "^2.0.0"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown",
+    "**/*.(json,yml,yaml,ts,tsx}": "prettier --write",
     "*.{ts,tsx}": [
       "npm run lint"
     ]
