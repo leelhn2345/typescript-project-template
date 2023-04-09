@@ -1,12 +1,1 @@
-console.log(
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  'hello bitch'                   );
+console.log(a'hello bitch');
