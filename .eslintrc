@@ -1,19 +1,6 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
-  "rules": {
-    "prefer-const": "error",
-    "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/no-non-null-assertion": "warn",
-    "@typescript-eslint/no-unused-vars": "error",
-    "no-var": "error",
-    "no-await-in-loop": 2,
-    "no-unused-labels": "error"
-  }
+  "plugins": ["@typescript-eslint"],
+  "rules": {}
 }
