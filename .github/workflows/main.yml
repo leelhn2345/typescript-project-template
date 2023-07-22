@@ -34,7 +34,7 @@ jobs:
           key: npm-${{ hashFiles('package-lock.json') }}
 
       - name: install dependencies
-        run: npm ci
+        run: npm i
 
       - name: lint
         run: npm run lint
