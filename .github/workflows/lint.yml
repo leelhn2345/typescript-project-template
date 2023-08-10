@@ -1,4 +1,4 @@
-name: typescript CI
+name: lint checks
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
           cache: npm
 
       - name: install dependencies
-        run: npm i
+        run: npm ci
 
       - name: lint
         run: npm run lint
